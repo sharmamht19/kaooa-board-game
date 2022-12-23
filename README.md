@@ -15,12 +15,12 @@
 - The vulture must jump a crow if the opportunity presents itself. Only one jump per turn.
 
 ## How to Play
--- Crows go first: Player 1 places one of their crow tokens on any of the ten intersections of the game board.
--- Vulture goes next: Player 2 places the vulture on any vacant spot.
--- Crows continue "drop phase" : Player 1 one drops his second crow on a vacant spot.
--- Players alternate turns with the vulture moving along the game board and Player 2 dropping his flock of crows one by one onto the game board. Only 
+> Crows go first: Player 1 places one of their crow tokens on any of the ten intersections of the game board.
+> Vulture goes next: Player 2 places the vulture on any vacant spot.
+> Crows continue "drop phase" : Player 1 one drops his second crow on a vacant spot.
+> Players alternate turns with the vulture moving along the game board and Player 2 dropping his flock of crows one by one onto the game board. Only 
    once all seven crows have been placed on the board can the crows begin moving.
--- Winning : The vulture wins if he captures at least 4 crows.
+> Winning : The vulture wins if he captures at least 4 crows.
    The crows win if they manage to trap the vulture in a way that prevents him from making a legal move.
 
 ## Execution 
