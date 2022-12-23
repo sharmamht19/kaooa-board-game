@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>kaooa</title>
+	<link rel="stylesheet" href="../CSS/style.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript" src="../JS/jsq1.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../JS/jquery.line.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script type="text/javascript" src="../JS/VanillaTilt.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.module.min.js"></script>
+
+<body style="background-color: black;">
+
+<center><h1>KAOOA</h1></center>
+
+<div class="parent">
+	 <div class="child">   
+	  <div class="vulture-Box"><div class="vultures" id="0" draggable="true" ondragstart="Drag(event)"></div></div>
+	 	<label>vulture</label>
+    <div id="vulture-turn"></div>
+  </div>
+	<div class="child-conaitner">
+<div class="Container">
+
+<!-- *************************************************|    main Container    |**************************************  -->
+<div id="Line1"></div>
+<div id="Line2"></div>
+<div id="Line3"></div>
+<div id="Line4"></div>
+<div id="Line5"></div>
+<div id="Line6"></div>
+<div id="Line7"></div>
+<div id="Line8"></div>
+<div id="Line9"></div>
+<div id="Line10"></div>
+<div id="Line11"></div>
+<div id="Line12"></div>
+<div id="Line13"></div>
+<div id="Line14"></div>
+<div id="Line15"></div>
+<div class="place" id="1" style="margin-top: 2.5%; margin-left: 15%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+<div class="place" id="2" style="margin-top:11%; margin-left: 15%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+<div class="place" id="3" style="margin-top:17%; margin-left: 15%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+<div class="place" id="4" style="margin-top:25.5%; margin-left: 15%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+<div class="place" id="5" style="margin-top:14% ;margin-left: 8%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+
+<div class="place" id="6" style="margin-top:9% ;margin-left: 20.5%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+<div class="place" id="7" style="margin-top:6% ;margin-left: 28%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+
+
+<div class="place" id="8"  style="margin-top:13.5% ;margin-left: 24.5%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+<div class="place" id="9"  style="margin-top:18.5% ;margin-left: 21%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+<div class="place" id="10" style="margin-top:21.5% ;margin-left: 29%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)"></div>
+
+
+
+<div class="Cplace" id="11" style="margin-left: 32%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)">
+</div>
+<div class="Cplace" id="12" style="margin-left: 35%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)">
+</div>
+<div class="Cplace" id="13" style="margin-left: 38%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)">
+</div>
+<div class="Cplace" id="14" style="margin-left: 41%;" ondrop="Drop(event)" ondragover="Allow_Drop(event)">
+</div>
+<!--
+<svg>
+    <polyline points="20,20 800,200 950,500 0,800 0,0"></polyline>    
+</svg>
+-->
+<!-- *************************************************************************************************************** -->
+</div>
+<button class="pushable"  onclick="createFile()">
+  <span class="front">
+   <i class="fa fa-download" aria-hidden="true" style="color:white"> </i>
+   download log
+  </span>
+</button>
+
+<audio id="audiotag1" src="backgroundmusic.mp3" preload="auto"></audio>
+<audio id="audiotag2" src="winningsound.wav" preload="auto"></audio>
+<button class="pushable"  style="margin-left:10%;" onclick="play_single_sound()">
+  <span class="front">
+<i  class="fa fa-music" style='font-size:20px;color:white;'></i>
+  </span>
+</button>
+<script type="text/javascript">
+  var flag=1;
+  function play_single_sound() {
+    if(flag == 1){
+    document.getElementById('audiotag1').play();
+    flag=0;
+  }else{
+    document.getElementById('audiotag1').pause();
+    flag=1;
+  }
+  }
+</script>
+</div>
+ 
+  <div class="child">
+    <div class="crows-Box">
+    	<div class="crows" id="21" draggable="true" ondragstart="Drag(event)"></div>
+    	<div class="crows" id="22" draggable="true" ondragstart="Drag(event)"></div>
+    	<div class="crows" id="23" draggable="true" ondragstart="Drag(event)"></div>
+    	<div class="crows" id="24" draggable="true" ondragstart="Drag(event)"></div>
+    	<div class="crows" id="25" draggable="true" ondragstart="Drag(event)"></div>
+    	<div class="crows" id="26" draggable="true" ondragstart="Drag(event)"></div>
+    	<div class="crows" id="27" draggable="true" ondragstart="Drag(event)"></div>
+    </div>
+    <label >crows</label>
+    <div id="crows-turn"></div>
+<script type="text/javascript">
+ 
+</script>
+
+
+ <script type="text/javascript"> 
+ 	swal({
+    title: "Lets Start the Kaooa Game",
+    button: "Start ",
+  });
+   getPixels();
+ Call_Turn(); 
+</script>
+  </div>
+</div>
+<div id="confetti-wrapper">
+  </div>
+  <script type="text/javascript" src="../JS/celebration.js"></script>  
+ </body>
+</html>
